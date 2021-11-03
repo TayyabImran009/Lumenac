@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flickity.min.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-pro-5.14.0/fontawesome-pro-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/chat-box.css">
+</head>
+
+
+<body> 
+    
+<div class="top-bar">
+    <h2>Welcome to Lumenac, SA</h2>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" height="35" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="catagory.html">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Catelogue
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Company
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+        </ul>
+        <button type="button" class="btn btn-info">CONTACT US</button>
+        <div class="btn my-2 my-sm-0 search" onclick="openSearch()"><i class="fal fa-search"></i></div>
+        <!-- dark light modes-->
+    </div>
+</nav>
+
+<section class="headingPro" style="overflow: auto;">
+    <div class="container-fluid nameOfPage">
+        <h1><i class="fal fa-horizontal-rule"></i>&nbsp; Product Details</h1>
+        <div class="row product-image-area" id="productImageArea">
+            <div class="col-5" id="fimage">
+                <div class="product-featured-image" id="product-featured-image">
+                    <img src="img/Backlight-40 slider 3-1.png" alt="">
+                </div>
+                <div class="product-image">
+                    <img src="img/Backlight-40 slider 3-1.png" id="product-featured-image-option1" alt="">
+                    <img src="img/image4.png" id="product-featured-image-option2" alt="">
+                </div>
+            </div>
+            <div class="col-7" id="productDetails">
+                <h3>BackLight</h3>
+                <p class="gray-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta optio vero quidem quibusdam tenetur nihil sed ad placeat ducimus officia enim praesentium, molestias animi repudiandae doloremque vitae ea sit nulla eligendi ipsum voluptatum? Deleniti architecto placeat assumenda explicabo libero?</p>
+                <p><b>Category:</b> Indoor LED downlight</p>
+                <p><b>Share: </b> <i class="fa fa-facebook-square gray-color" aria-hidden="true"></i> <i class="fa fa-twitter-square gray-color" aria-hidden="true"></i> <i class="fa fa-linkedin-square gray-color" aria-hidden="true"></i> <i class="fa fa-telegram gray-color" aria-hidden="true"></i> </p>
+            </div>
+        </div>
+        
+        <hr class="gray-color" >
+
+        <div class="product-tab-section">
+            <div class="row products-tabs">
+                <h5 class="products-tabs-active" id="additionalInfoTab">Additional Info</h5>
+                <h5 class="products-tabs-options" id="dataSheetTab">Data Sheet</h5>
+                <h5 class="products-tabs-options" id="downloadsTab">Downloads</h5>
+            </div>
+            <div class="additionalInfoDiv" id="additionalInfoDiv">
+                <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Body</th>
+                        <td style="text-align: right;">White nylon Injection</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Diffuser</th>
+                        <td style="text-align: right;">Lorem, ipsum dolor.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Driver</th>
+                        <td style="text-align: right;">Lorem, ipsum.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Useful Life</th>
+                        <td style="text-align: right;">Lorem, ipsum dolor.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Utilization</th>
+                        <td style="text-align: right;">Lorem ipsum dolor sit.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Application</th>
+                        <td style="text-align: right;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dataSheetDiv" id="dataSheetDiv" style="display: none;">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">CODIGO</th>
+                        <th scope="col">WATTS</th>
+                        <th scope="col">TENSION</th>
+                        <th scope="col">TEMP</th>
+                        <th scope="col">FLUJO (KM)</th>
+                        <th scope="col">EFICIENCIA</th>
+                        <th scope="col">CR1</th>
+                        <th scope="col">FACTOR P</th>
+                        <th scope="col">VIDA UTIL</th>
+                        <th scope="col">EQUIVALENCIA</th>
+                        <th scope="col">AXB (MM)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                      <tr>
+                        <td>Round 15/830</td>
+                        <td>15</td>
+                        <td>220-240V</td>
+                        <td>3000K</td>
+                        <td>1200</td>
+                        <td>>80|m/w</td>
+                        <td>80</td>
+                        <td>0.9</td>
+                        <td>25000 hs</td>
+                        <td>INC 100W</td>
+                        <td>167x62</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="downloadDiv" id="downloadDiv" style="display: none;">
+                <p>Technical Sheet In PDF</p>
+                <button type="button" class="btn btn-primary btn-lg">DOWNLOAD PDF</button>
+                <br><br>
+                <p>IES Files</p>
+                <button type="button" class="btn btn-primary btn-lg">BACKLIGHT 40</button>
+            </div>
+        </div>
+        <hr class="gray-color">
+        <div class="relatedProducts">
+            <h1 style="background-color:#fff"><i class="fal fa-horizontal-rule"></i>&nbsp; Related Products</h1>
+            <div class="related-products-images">
+                <div class="relatedImageContainer">
+                  <img src="img/Backlight-40 slider 3-1.png" alt="">
+                  <p class="imgName2"><b>Led Light</b></p>
+                </div>
+                <div class="relatedImageContainer">
+                  <img src="img/Backlight-40 slider 3-1.png" alt="">
+                  <p class="imgName2"><b>Led Light</b></p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 footer-info">
+                <img class="img-fluid" src="img/logo.png" alt="">
+                <p>Lumenac has been present for years among the leading<br> companies in the lighting market. For 37 years, it has<br> produced and manufactured in Argentina a wide range of<br> products for industrial, commercial and residential lighting.
+                <br><br><br>
+                <i class="fal fa-map-marker-alt"></i>&nbsp; William Morris 567. Villa Martelli. Buenos Aires
+                <br><br>
+                <i class="fal fa-phone-alt"></i>&nbsp; 4709-3300
+                <br><br>
+                <i class="fal fa-envelope"></i>&nbsp; SALES@LUMENAC.COM.AR
+                </p>
+
+          </div>
+          <div class="col-md-2 footer-links">
+            <ul class="h4" id="footer-links-heading">NAVIGATE</ul>
+                 <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PROJECT</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                 </ul>
+            </div>
+              <div class="col-md-2 footer-links">
+                <ul class="h4" id="footer-links-heading">CATALOGUE</ul>
+                 <ul>
+                    <li><a href="#">Identical to box height</a></li>
+                    <li><a href="#">Outdoor LED Ceiling Lightst</a></li>
+                    <li><a href="#">LED Street Lighting</a></li>
+                    <li><a href="#">Solar LED Fixtures</a></li>
+                    <li><a href="#">LED Industrial Pendants</a></li>
+                    <li><a href="#">Indoor LED Downlights</a></li>
+                    <li><a href="#">LED Watertight</a></li>
+                 </ul>
+              </div>
+              <div class="col-md-2 footer-links">
+                <ul class="last-links">
+                    <li><a href="#">LED Streetlights</a></li>
+                    <li><a href="#">Service Station Luminaire</a></li>
+                    <li><a href="#">LED Floodlights</a></li>
+                    <li><a href="#">LED Battens</a></li>
+                    <li><a href="#">Rail Spot</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div> 
+        <div class="container footer-end">
+          <div class="copyright">
+            &copy; Copyright 2021-Planlab Solutions-All Rights Reserved 
+          </div>
+        </div> 
+  </footer>
+
+
+<div id="contact-form-content">
+    <div class="chat-box">
+        <div class="chat-form">
+            <h2>CONTACTO</h2>
+            <hr class="under-line">
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre*"><br>
+            <input type="text" id="email" name="email" placeholder="Tu correo electronico*"><br>
+            <textarea name="comment" form="usrform">Mensaje*</textarea>
+            <hr class="under-line">
+            <button type="button" class="btn btn-info">enviar</button>
+        </div>
+        </div>
+</div>
+<div  id="contact-form">
+    <button type="button" onclick="openSearch()" class="btn btn-info button-bottom">CONTACTO<i class="fal fa-comment-alt-lines"></i></button>
+</div>
+<div  id="contact-form2">
+    <button type="button" onclick="closeSearch()" class="btn btn-info button-bottom">CONTACTO<i class="fal fa-comment-alt-lines"></i></button>
+</div>
+
+
+
+
+
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome 5 links-->
+    <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+    <script src="js/search-popup.js"></script>
+    <script src="js/modes.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/flickity.pkgd.min.js" ></script>
+
+    <script src="js/search-popup.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
