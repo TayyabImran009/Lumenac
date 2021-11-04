@@ -9,13 +9,20 @@ const productFeaturedImageOption2 = document.getElementById(
   "product-featured-image-option2"
 );
 
+const featureImageBorder1 = document.getElementById("featureImageBorder1");
+const featureImageBorder2 = document.getElementById("featureImageBorder2");
+
 productFeaturedImageOption1.addEventListener("click", function () {
   productFeaturedImage.innerHTML =
     "<img src='img/Backlight-40 slider 3-1.png' alt=''>";
+  featureImageBorder1.style.border = "solid 1px black";
+  featureImageBorder2.style.border = "none";
 });
 
 productFeaturedImageOption2.addEventListener("click", function () {
   productFeaturedImage.innerHTML = "<img src='img/image4.png' alt=''>";
+  featureImageBorder2.style.border = "solid 1px black";
+  featureImageBorder1.style.border = "none";
 });
 
 // Products Tabs

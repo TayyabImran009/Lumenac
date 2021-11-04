@@ -21,10 +21,10 @@
 
 <body>
     
-<div class="top-bar">
+<div class="top-bar" id="topBar">
     <h2>Welcome to Lumenac, SA</h2>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav" id="NavFullScreen">
     <a class="navbar-brand" href="#">
         <img src="img/logo.png" height="35" alt="">
     </a>
@@ -69,26 +69,36 @@
     </div>
 </nav>
 
-<!-- <nav>
+<nav id="navNav">
     <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
+    <label for="check" class="checkbtn bars" id="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
     <label class="logo"><img src="img/logo.png" height="35" alt=""></label>
     <ul>
         <hr>
-      <li><a href="#">Project</a></li>
+      <li><a href="#" class="dropDownH">Project</a></li>
       <hr>
-      <li><a href="#">Catalouge</a></li>
+      <li id="catalougeDropdownBtn"><a id="catalougeDropdownH" href="#" class="dropDownH">Catalouge <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+      <div id="catalougeDropdown" class="hideDropDownDiv">
+          <p class="dropDownP">Link 1</p>
+          <p class="dropDownP">Link 1</p>
+          <p class="dropDownP">Link 1</p>
+      </div>
       <hr>
-      <li><a href="#">The Company</a></li>
+      <li id="companyDropdownBtn"><a id="companyDropdownH" href="#" class="dropDownH">The Company <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+      <div id="companyDropdown" class="hideDropDownDiv">
+        <p class="dropDownP">Link 1</p>
+        <p class="dropDownP">Link 1</p>
+        <p class="dropDownP">Link 1</p>
+    </div>
       <hr>
       <button type="button" class="btn btn-info">CONTACT US</button>
     </ul>
     <label class="searchbtn">
         <i class="fas fa-search"></i>
       </label>
-  </nav> -->
+  </nav>
 
 <!-- Apes -->
 <section class="text-slider" id="ApeS">
@@ -259,39 +269,51 @@
     </div>
 </section>
 <div class="row" id="categoriesImgArea" style="margin-right: 0px;">
-    <div class="card contain">
+    <div class="card contain" id="categoriesCard">
       <img class="card-img-top contain-img" src="img/rect1.png" alt="Card image cap">
       <div class="contain-overlay">
         <h2 class="contain-text">LED FLOODLIGHTS</h2>
     </div>
     </div>
-    <div class="card contain">
+    <div class="card contain" id="categoriesCard">
         <img class="card-img-top contain-img" src="img/rect2.png" alt="Card image cap">
         <div class="contain-overlay">
           <h2 class="contain-text">LOREM IPSUM</h2>
       </div>
       </div>
-      <div class="card contain">
+      <div class="card contain" id="categoriesCard">
         <img class="card-img-top contain-img" src="img/rect3.png" alt="Card image cap">
         <div class="contain-overlay">
           <h2 class="contain-text">SOLAR 110</h2>
       </div>
       </div>
-      <div class="card contain">
+      <div class="card contain" id="categoriesCard">
         <img class="card-img-top contain-img" src="img/rect8.png" alt="Card image cap">
         <div class="contain-overlay">
           <h2 class="contain-text">LED FLOODLIGHTS</h2>
       </div>
       </div>
-      <div class="card contain">
+      <div class="card contain" id="categoriesCard">
         <img class="card-img-top contain-img" src="img/rect5.png" alt="Card image cap">
         <div class="contain-overlay">
           <h2 class="contain-text">LOREM IPSUM</h2>
       </div>
       </div>
-      <div class="card contain">
+      <div class="card contain" id="categoriesCard">
           <img class="card-img-top contain-img" src="img/rect6.png" alt="Card image cap">
           <div class="contain-overlay">
+            <h2 class="contain-text">LED FLOODLIGHTS</h2>
+        </div>
+        </div>
+        <div class="card contain" id="categoriesCard">
+        <img class="card-img-top contain-img" src="img/rect7.png" alt="Card image cap">
+        <div class="contain-overlay">
+            <h2 class="contain-text">LED FLOODLIGHTS</h2>
+        </div>
+        </div>
+        <div class="card contain" id="categoriesCard">
+        <img class="card-img-top contain-img" src="img/rect1.png" alt="Card image cap">
+        <div class="contain-overlay">
             <h2 class="contain-text">LED FLOODLIGHTS</h2>
         </div>
         </div>
@@ -553,6 +575,8 @@
     <script src="js/flickity.pkgd.min.js" ></script>
 
     <script src="js/search-popup.js"></script>
+    <!-- navBar -->
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,13 @@
-/* nav {
+nav {
   background: white;
   height: 80px;
   width: 100%;
 }
+
+#navNav {
+  display: none;
+}
+
 label.logo {
   color: white;
   font-size: 35px;
@@ -27,11 +32,6 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,
-a:hover {
-  background: #1b9bff;
-  transition: 0.5s;
-}
 .checkbtn {
   font-size: 30px;
   color: black;
@@ -54,7 +54,14 @@ a:hover {
     font-size: 16px;
   }
 }
-@media (max-width: 858px) {
+@media (max-width: 992px) {
+  #navNav {
+    display: block;
+  }
+
+  #NavFullScreen {
+    display: none !important;
+  }
   .checkbtn {
     display: block;
   }
@@ -71,9 +78,8 @@ a:hover {
   nav {
     overflow: hidden;
     background-color: white;
-    position: fixed;
     width: 100%;
-    z-index: 999999;
+    z-index: 9999;
   }
   ul {
     position: fixed;
@@ -90,18 +96,55 @@ a:hover {
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 20px 0;
     line-height: 30px;
   }
   nav ul li a {
     font-size: 20px;
   }
-  a:hover,
-  a.active {
-    background: none;
-    color: #0082e6;
-  }
+
   #check:checked ~ ul {
     left: 0;
   }
-} */
+}
+
+.showDropDownDiv {
+  display: block;
+}
+
+.hideDropDownDiv {
+  display: none;
+}
+
+.dropDownP {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.dropDownH {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a1a1a;
+}
+
+.dropDownHCliked {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #1a1a1a;
+}

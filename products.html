@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/chat-box.css">
+    <link rel="stylesheet" href="css/aplicaciones.css">
 </head>
 
 
@@ -77,8 +78,12 @@
                     <img src="img/Backlight-40 slider 3-1.png" alt="">
                 </div>
                 <div class="product-image">
-                    <img src="img/Backlight-40 slider 3-1.png" id="product-featured-image-option1" alt="">
-                    <img src="img/image4.png" id="product-featured-image-option2" alt="">
+                    <div id="featureImageBorder1" style="display: inline-block; border: solid 1px black;">
+                      <img src="img/Backlight-40 slider 3-1.png" id="product-featured-image-option1" alt=""> 
+                    </div>  
+                    <div id="featureImageBorder2" style="display: inline-block;">
+                      <img src="img/image4.png" id="product-featured-image-option2" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col-7" id="productDetails">
@@ -86,6 +91,47 @@
                 <p class="gray-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta optio vero quidem quibusdam tenetur nihil sed ad placeat ducimus officia enim praesentium, molestias animi repudiandae doloremque vitae ea sit nulla eligendi ipsum voluptatum? Deleniti architecto placeat assumenda explicabo libero?</p>
                 <p><b>Category:</b> Indoor LED downlight</p>
                 <p><b>Share: </b> <i class="fa fa-facebook-square gray-color" aria-hidden="true"></i> <i class="fa fa-twitter-square gray-color" aria-hidden="true"></i> <i class="fa fa-linkedin-square gray-color" aria-hidden="true"></i> <i class="fa fa-telegram gray-color" aria-hidden="true"></i> </p>
+            
+                <div class="aplicaciones">
+                  <h3>Aplicaciones</h3>
+
+                  <div class="row aplicacionesImageContainer">
+
+                    <div class="aplicacionesImage">
+                      <img id="myImg00" id="myImg" src="img/rect1.png" alt="">
+                      <div id="myImgDiv00" class="overlay-content-aplicaciones">
+                        <i class="fa fa-search overlay-aplicaciones-text"></i>
+                    </div>
+                    </div>
+
+                    <div class="aplicacionesImage">
+                      <img id="myImg00" src="img/rect2.png" alt="">
+                      <div id="myImgDiv00" class="overlay-content-aplicaciones">
+                        <i class="fa fa-search overlay-aplicaciones-text"></i>
+                    </div>
+                    </div>
+
+                    <div class="aplicacionesImage">
+                      <img id="myImg00" src="img/rect3.png" alt="">
+                      <div id="myImgDiv00" class="overlay-content-aplicaciones">
+                        <i class="fa fa-search overlay-aplicaciones-text"></i>
+                    </div>
+                    </div>
+
+                      <!-- The Modal -->
+                      <div id="myModal00" class="modal00">
+                        <div class="aplicaciones-slider-image-contaner">
+                          <span class="close00">&times;</span>
+                          <img class="modal-content00" id="img01">
+
+                          <i class="fas fa-angle-left" id="aplicaciones-slider-left-btn"></i>
+                          <i class="fas fa-angle-right" id="aplicaciones-slider-right-btn"></i>
+                        </div>
+                        <div id="caption00"></div>
+                      </div>
+                  </div>
+    
+                </div>
             </div>
         </div>
         
@@ -358,6 +404,7 @@
 
     <script src="js/search-popup.js"></script>
     <script src="js/products.js"></script>
+    <script src="js/aplicaciones.js"></script>
 </body>
 
 </html>
