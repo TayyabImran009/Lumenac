@@ -338,7 +338,7 @@
 
 .carousel-cell {
   position: relative;
-} 
+}
 
 .overlay-img {
   display: block;
@@ -408,6 +408,7 @@
     width: 350px;
   }
 }
+
 @media (min-width: 1920px) {
   .categories img {
     height: 480px;
@@ -1175,8 +1176,8 @@ img:nth-child(5) {
 }
 
 .products-tabs-active {
-  color: blue;
-  border-bottom: solid 2px blue;
+  color: #00539f;
+  border-bottom: solid 2px #00539f;
   margin-right: 20px;
   text-align: center;
   cursor: pointer;
@@ -1376,8 +1377,8 @@ img:nth-child(5) {
 }
 
 .products-tabs-active {
-  color: blue;
-  border-bottom: solid 2px blue;
+  color: #00539f;
+  border-bottom: solid 2px #00539f;
   margin-right: 20px;
   text-align: center;
   cursor: pointer;
@@ -1415,8 +1416,9 @@ img:nth-child(5) {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
   height: 250px;
+  width: 250px;
+  transition: 0.5s ease;
   border: solid 3px #f4f4f4;
 }
 
@@ -1425,8 +1427,9 @@ img:nth-child(5) {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
   height: 100px;
+  width: 100px;
+  transition: 0.5s ease;
   border: solid 3px #f4f4f4;
 }
 
@@ -1435,8 +1438,9 @@ img:nth-child(5) {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
   height: 150px;
+  width: 150px;
+  transition: 0.5s ease;
   border: solid 3px #f4f4f4;
 }
 
@@ -1454,6 +1458,91 @@ img:nth-child(5) {
 
 .catalougeImgContainer {
   display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.catalouge-overlay-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #1a1a1abf;
+  text-align: center;
+  padding-top: 40%;
+}
+
+.catalouge-overlay-content-mm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #1a1a1abf;
+  text-align: center;
+  padding-top: 45%;
+}
+
+.catalouge-overlay-content-sm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #1a1a1abf;
+  text-align: center;
+  padding-top: 50%;
+}
+
+.catalouge-overlay-content p {
+  font-size: 30px;
+}
+
+.catalougeImgContainer:hover {
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.catalougeImgContainer:hover .catalouge-overlay-content {
+  opacity: 1;
+  transform: translate(-10px, -10px) !important;
+}
+
+.catalougeImgContainer:hover .catalouge-overlay-content-mm {
+  opacity: 1;
+  transform: translate(-10px, -10px) !important;
+}
+
+.catalougeImgContainer:hover .catalouge-overlay-content-sm {
+  opacity: 1;
+  transform: translate(-8px, -8px) !important;
+}
+
+.catalougeImgContainer:hover .catalouge-lgImg {
+  transform: translate(-10px, -10px) !important;
+}
+
+.catalougeImgContainer:hover .catalouge-mmImg {
+  transform: translate(-10px, -10px) !important;
+}
+
+.catalougeImgContainer:hover .catalouge-smImg {
+  transform: translate(-8px, -8px) !important;
 }
 
 @media (max-width: 650px) {
@@ -1678,5 +1767,54 @@ img:nth-child(5) {
   #categoriesCard {
     width: 305px;
     height: 305px;
+  }
+}
+
+@media (max-width: 1266px) {
+  #categoriesCard {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1245px) {
+  #categoriesCard {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 1205px) {
+  #categoriesCard {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1165px) {
+  #categoriesCard {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 1125px) {
+  #categoriesCard {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 1085px) {
+  #categoriesCard {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  #categoriesImgArea {
+    padding-left: 80px;
+    padding-right: 40px;
   }
 }

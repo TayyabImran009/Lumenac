@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/chat-box.css">
+    <link rel="stylesheet" href="css/navbar2.css">
 </head>
 
 
@@ -23,49 +24,80 @@
 <div class="top-bar">
     <h2>Welcome to Lumenac, SA</h2>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.png" height="35" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav" id="NavFullScreen">
+  <a class="navbar-brand" href="#">
+      <img src="img/logo.png" height="35" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto navStyle">
           <li class="nav-item">
               <a class="nav-link" href="products.html">Product</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="catagory.html">Category</a>
           </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Catelogue
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Catelogue
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Company
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-        </ul>
-        <button type="button" class="btn btn-info">CONTACT US</button>
-        <div class="btn my-2 my-sm-0 search" onclick="openSearch()"><i class="fal fa-search"></i></div>
-        <!-- dark light modes-->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+      </ul>
+      <button type="button" class="btn btn-info">CONTACT US</button>
+      <div class="btn my-2 my-sm-0 search" onclick="openSearch()"><i class="fal fa-search"></i></div>
+      
+  </div>
+</nav>
+
+<nav id="navNav">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn bars" id="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo"><img src="img/logo.png" height="35" alt=""></label>
+  <ul>
+      <hr>
+    <li><a href="#" class="dropDownH">Project</a></li>
+    <hr>
+    <li id="catalougeDropdownBtn"><a id="catalougeDropdownH" href="#" class="dropDownH">Catalouge <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+    <div id="catalougeDropdown" class="hideDropDownDiv">
+        <p class="dropDownP">Link 1</p>
+        <p class="dropDownP">Link 1</p>
+        <p class="dropDownP">Link 1</p>
     </div>
+    <hr>
+    <li id="companyDropdownBtn"><a id="companyDropdownH" href="#" class="dropDownH">The Company <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+    <div id="companyDropdown" class="hideDropDownDiv">
+      <p class="dropDownP">Link 1</p>
+      <p class="dropDownP">Link 1</p>
+      <p class="dropDownP">Link 1</p>
+  </div>
+    <hr>
+    <button type="button" class="btn btn-info">CONTACT US</button>
+  </ul>
+  <label class="searchbtn">
+      <i class="fas fa-search"></i>
+    </label>
 </nav>
 
 <section class="headingCat" style="overflow: auto;">
@@ -75,9 +107,9 @@
               <h1><i class="fal fa-horizontal-rule"></i>&nbsp; CATALOUGE</h1>
             </div>
             <div class="catalougeOptions">
-              <i class="fa fa-th catalougeSize" aria-hidden="true" id="catalougeSM"></i>
-              <i class="fa fa-th catalougeSize" aria-hidden="true" id="catalougeMM"></i>
-              <i class="fa fa-th catalougeSize" aria-hidden="true" id="catalougeLG"></i>
+              <img src="img/sm.png" class="catalougeSize" id="catalougeSM" alt="">
+              <img src="img/mm.png" class="catalougeSize" id="catalougeMM" alt="">
+              <img src="img/lg.png" class="catalougeSize" id="catalougeLG" alt="">
             </div>
         </div>
         <div class="row category-image-area" id="categorySection">
@@ -91,36 +123,42 @@
                 <p>LED Watertight</p>
             </div>
             <div class="col-9" id="categoryImages">
-              <div class="catalouge" id="catalouge">
+              <div class="catalouge" id="catalouge"> 
                 <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
+                  <img src="img/slide1.png" class="catalouge-lgImg" alt="">
                   <p class="nameofCatalouge"><b>LED Light</b></p>
+                  <div class="catalouge-overlay-content">
+                    <p style="color: white;" >Led Light</p>
+                  </div>
                 </div>
-
                 <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
+                  <img src="img/slide2.png" class="catalouge-lgImg" alt="">
                   <p class="nameofCatalouge"><b>LED Light</b></p>
+                  <div class="catalouge-overlay-content">
+                    <p style="color: white;" >Led Light</p>
+                  </div>
                 </div>
-
                 <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
+                  <img src="img/slide3.png" class="catalouge-lgImg" alt="">
                   <p class="nameofCatalouge"><b>LED Light</b></p>
+                  <div class="catalouge-overlay-content">
+                    <p style="color: white;" >Led Light</p>
+                  </div>
                 </div>
-
                 <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
+                  <img src="img/slide4.png" class="catalouge-lgImg" alt="">
                   <p class="nameofCatalouge"><b>LED Light</b></p>
+                  <div class="catalouge-overlay-content">
+                    <p style="color: white;" >Led Light</p>
+                  </div>
                 </div>
-
                 <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                </div>
-
-                <div class="catalougeImgContainer">
-                  <img src="img/Backlight-40 slider 3-1.png" class="catalouge-lgImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                </div>
+                  <img src="img/slide5.png" class="catalouge-lgImg" alt="">
+                  <p class="nameofCatalouge"><b>Led Light</b></p>
+                  <div class="catalouge-overlay-content">
+                    <p style="color: white;" >Led Light</p>
+                  </div>
+                </div>           
                 
               </div> 
                 
@@ -233,6 +271,8 @@
 
     <script src="js/search-popup.js"></script>
     <script src="js/catagory.js"></script>
+    <!-- navBar -->
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
