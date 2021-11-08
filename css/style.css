@@ -1,4 +1,52 @@
-@font-face {
+Skip
+  to
+  content
+  Search
+  or
+  jump
+  to…
+  Pull
+  requests
+  Issues
+  Marketplace
+  Explore
+  @TayyabImran009
+  TayyabImran009
+  /
+  Lumenac
+  Public
+  1
+  00
+  Code
+  Issues
+  Pull
+  requests
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  Settings
+  Lumenac/css/style.css
+  @M-Tayyab009
+  M-Tayyab009
+  Third
+  Commit
+  Latest
+  commit
+  7d5b43e
+  3
+  days
+  ago
+  History
+  1
+  contributor
+  1820
+  lines
+  (1647 sloc)
+  31.1
+  KB
+  @font-face {
   font-family: Montserrat;
   src: url("fonts/Montserrat-Regular.ttf");
 }
@@ -754,7 +802,6 @@ h6 {
   overflow: hidden;
   margin-top: 50px;
 }
-
 .about-us .contain2 {
   float: right;
   margin-right: 71px;
@@ -762,7 +809,6 @@ h6 {
   border-right: 3px solid #000000;
   border-bottom: 3px solid#000000;
 }
-
 .contain-img2 {
   display: block;
   height: 100%;
@@ -1546,8 +1592,19 @@ img:nth-child(5) {
 }
 
 @media (max-width: 650px) {
+  .catalouge-overlay-content {
+    display: none;
+  }
+  .catalouge {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
   #categoryImages {
-    padding: 20px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
   }
   .category-image-area {
     margin: 0;
@@ -1562,8 +1619,11 @@ img:nth-child(5) {
   }
 
   .catalougeImgContainer {
-    display: inline-block;
-    width: 48%;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 0px;
+    margin: 0px;
   }
 
   .nameofCatalouge {
@@ -1576,14 +1636,27 @@ img:nth-child(5) {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 10px;
-    height: 250px;
+    width: 90%;
+    height: auto;
     border: solid 3 px #f4f4f4;
   }
 
   .imgName2 {
     display: block;
     text-align: center;
+  }
+  .catalougeImgContainer:hover .catalouge-overlay-content {
+    opacity: 0;
+    transform: translate(0px, 0px) !important;
+  }
+
+  .catalougeImgContainer:hover .catalouge-lgImg {
+    transform: translate(0px, 0px) !important;
+  }
+
+  .catalougeImgContainer:hover {
+    border-right: 0px;
+    border-bottom: 0px;
   }
 }
 
@@ -1779,40 +1852,16 @@ img:nth-child(5) {
 
 @media (max-width: 1245px) {
   #categoriesCard {
-    width: 290px;
-    height: 290px;
-  }
-}
-
-@media (max-width: 1205px) {
-  #categoriesCard {
-    width: 280px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 1165px) {
-  #categoriesCard {
-    width: 270px;
-    height: 270px;
-  }
-}
-
-@media (max-width: 1125px) {
-  #categoriesCard {
-    width: 260px;
-    height: 260px;
-  }
-}
-
-@media (max-width: 1085px) {
-  #categoriesCard {
-    width: 250px;
-    height: 250px;
+    width: 25%;
+    height: auto;
   }
 }
 
 @media (max-width: 650px) {
+  #categoriesCard {
+    width: 50%;
+    height: auto;
+  }
   #categoriesImgArea {
     padding-left: 80px;
     padding-right: 40px;
