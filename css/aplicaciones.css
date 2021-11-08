@@ -159,13 +159,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 671px) {
   .aplicacionesImage {
-    /* display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    margin-top: 20px; */
-    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
     float: right;
   }
   .aplicacionesImage img {

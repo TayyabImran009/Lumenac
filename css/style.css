@@ -1,52 +1,4 @@
-Skip
-  to
-  content
-  Search
-  or
-  jump
-  to…
-  Pull
-  requests
-  Issues
-  Marketplace
-  Explore
-  @TayyabImran009
-  TayyabImran009
-  /
-  Lumenac
-  Public
-  1
-  00
-  Code
-  Issues
-  Pull
-  requests
-  Actions
-  Projects
-  Wiki
-  Security
-  Insights
-  Settings
-  Lumenac/css/style.css
-  @M-Tayyab009
-  M-Tayyab009
-  Third
-  Commit
-  Latest
-  commit
-  7d5b43e
-  3
-  days
-  ago
-  History
-  1
-  contributor
-  1820
-  lines
-  (1647 sloc)
-  31.1
-  KB
-  @font-face {
+@font-face {
   font-family: Montserrat;
   src: url("fonts/Montserrat-Regular.ttf");
 }
@@ -662,7 +614,8 @@ h6 {
 }
 
 #categoriesImgArea {
-  padding-left: 60px;
+  padding: 0px;
+  margin: 30px;
 }
 @media (max-width: 650px) {
   .contain-img {
@@ -677,6 +630,7 @@ h6 {
 
   #categoriesImgArea {
     padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -1133,6 +1087,22 @@ img:nth-child(5) {
   }
 }
 
+@media (max-width: 560px) {
+  .pic {
+    height: 184px !important;
+    width: 333px;
+  }
+
+  .slider-outline {
+    height: 184px !important;
+    margin: auto;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 333px;
+    border: 1px solid #000000;
+  }
+}
+
 /* Products */
 
 .headingPro h1 {
@@ -1299,15 +1269,7 @@ img:nth-child(5) {
     justify-content: center;
     align-items: center;
     padding-left: 0px;
-  }
-
-  .related-products-images img {
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px !important;
-    border: solid 3px #f4f4f4;
+    padding-right: 0px;
   }
 
   .imgName2 {
@@ -1319,16 +1281,32 @@ img:nth-child(5) {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
+}
 
+@media (max-width: 650px) {
   .relatedProducts {
     margin-left: 0px !important;
     margin-right: 0px !important;
     padding-bottom: 35px;
+    width: 100%;
+  }
+
+  .relatedImageContainer {
+    width: 40%;
+  }
+
+  .related-products-images img {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border: solid 3px #f4f4f4;
   }
 }
 
 /* Catagory */
-
 .headingCat h1 {
   font-family: MontserratBold;
   font-size: 36px;
@@ -1863,7 +1841,17 @@ img:nth-child(5) {
     height: auto;
   }
   #categoriesImgArea {
-    padding-left: 80px;
-    padding-right: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  #contact-form {
+    display: none;
+  }
+
+  #contact-form2 {
+    display: none;
   }
 }
