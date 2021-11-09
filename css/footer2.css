@@ -1,0 +1,34 @@
+.responsiveFooter {
+  width: 100%;
+  text-align: center;
+  line-height: 17.07px;
+  display: none;
+}
+
+.responsiveFooter h3 {
+  font-size: 18px;
+}
+
+.responsiveFooter p {
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .responsiveFooter {
+    display: block !important;
+  }
+
+  #footer .footer-top .footer-info p {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #footerLogo {
+    margin-left: 0px !important;
+  }
+
+  #md6FooterDetails {
+    width: 100%;
+    text-align: center;
+  }
+}

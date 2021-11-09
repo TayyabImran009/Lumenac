@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/chat-box.css">
     <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/footer2.css">
 </head>
 
 
@@ -296,8 +297,8 @@
     <div class="container-fluid">
         <div class="row" id="whoWeAreArea">
             <div class="col-6" id="whoWeAreArea1">
-                <section class="heading2" style="margin-left: 25px;">
-                    <h1 style="margin-bottom: 10px;"><i class="fal fa-horizontal-rule"></i>&nbsp; WHO WE ARE?</h1>
+                <section class="heading2" style="margin-left: 0px;">
+                    <h1 id="whoRweHeading" style="margin-bottom: 10px;"><i class="fal fa-horizontal-rule"></i>&nbsp; WHO WE ARE?</h1>
                 </section>
                 <p class="about-text">
                     Lumenac has been present for years among the leading companies in the lighting market. For 37 years, it has produced and manufactured in Argentina a wide range of products for industrial, commercial and residential lighting. The products that Lumenac offers are manufactured in its two production plants located in the town of Villa Martelli, Buenos Aires.
@@ -387,7 +388,7 @@
 
 
   <section class="heading">
-    <h1><i class="fal fa-horizontal-rule"></i> OUR LATEST PROJECTS</h1>
+    <h1 id="lastProjectheading"><i class="fal fa-horizontal-rule"></i> OUR LATEST PROJECTS</h1>
 </section>
 
   <div class="projects">
@@ -444,9 +445,9 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 footer-info">
-                <img class="img-fluid" src="img/logo.png" alt="">
+        <div class="row" id="rowFooter">
+          <div class="col-md-6 footer-info" id="md6FooterDetails">
+                <img class="img-fluid" src="img/logo.png" alt="" id="footerLogo">
                 <p>Lumenac has been present for years among the leading<br> companies in the lighting market. For 37 years, it has<br> produced and manufactured in Argentina a wide range of<br> products for industrial, commercial and residential lighting.
                 <br><br><br>
                 <i class="fal fa-map-marker-alt"></i>&nbsp; William Morris 567. Villa Martelli. Buenos Aires
@@ -457,7 +458,7 @@
                 </p>
 
           </div>
-          <div class="col-md-2 footer-links">
+          <div class="col-md-2 footer-links" id="md2FooterNavigate">
                 <ul class="h4" id="footer-links-heading">NAVIGATE</ul>
                  <ul>
                     <li><a href="#">HOME</a></li>
@@ -466,7 +467,7 @@
                     <li><a href="#">CONTACT US</a></li>
                  </ul>
             </div>
-              <div class="col-md-2 footer-links">
+              <div class="col-md-2 footer-links" id="md2FooterCatalouge1">
                 <ul class="h4" id="footer-links-heading">CATALOGUE</ul>
                  <ul>
                     <li><a href="#">Identical to box height</a></li>
@@ -478,7 +479,7 @@
                     <li><a href="#">LED Watertight</a></li>
                  </ul>
               </div>
-              <div class="col-md-2 footer-links">
+              <div class="col-md-2 footer-links" id="md2FooterCatalouge2">
                 <ul class="last-links">
                     <li><a href="#">LED Streetlights</a></li>
                     <li><a href="#">Service Station Luminaire</a></li>
@@ -486,6 +487,27 @@
                     <li><a href="#">LED Battens</a></li>
                     <li><a href="#">Rail Spot</a></li>
                 </ul>
+              </div>
+              <div class="responsiveFooter">
+                  <h3>NAVIGATE</h3>
+                  <p>Home</p>
+                  <p>Projects</p>
+                  <p>About Us</p>
+                  <p>Contact Us</p>
+                    <br><br>
+                  <h3>CATALOUGE</h3>
+                  <p>Indoor LED Ceiling Lights</p>
+                  <p>Outdoor LED Ceiling Lights</p>
+                  <p>LED Street Lighting</p>
+                  <p>Solat LED Fixtures</p>
+                  <p>LED Industrial Pendants</p>
+                  <p>Indoor LED Downlights</p>
+                  <p>LED Watertight</p>
+                  <p>LED Streetlights/p>
+                  <p>Service Station Luminaire</p>
+                  <p>LED Floodlights</p>
+                  <p>LED Battens</p>
+                  <p>Rail Sport</p>
               </div>
         </div>
       </div>
@@ -545,6 +567,7 @@
     <script src="js/search-popup.js"></script>
     <!-- navBar -->
     <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html> 
