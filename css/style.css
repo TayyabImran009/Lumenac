@@ -519,6 +519,18 @@ h6 {
     font-size: 34px;
   }
 }
+
+@media (max-width: 471px) {
+  #lastProjectheading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 416px) {
+  #lastProjectheading {
+    font-size: 25px;
+  }
+}
 /*contact us*/
 .contact-us {
   height: 288px;
@@ -736,6 +748,21 @@ h6 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@media (max-width: 835px) {
+  .homeCategories {
+    margin-left: 0px !important;
+  }
+
+  #homeCategoriesbnt {
+    display: none;
+  }
+
+  #homeCategoriesArea {
+    width: 100% !important;
+  }
+}
+
 /* hover effect*/
 .contain1 {
   position: relative;

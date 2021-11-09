@@ -20,3 +20,14 @@ $(function () {
     whoWeAreArea2.classList.remove("col-6");
   }
 });
+
+const CategoriesRow = document.getElementById("CategoriesRow");
+const homeCategoriesArea = document.getElementById("homeCategoriesArea");
+const homeCategoriesbnt = document.getElementById("homeCategoriesbnt");
+$(function () {
+  if (ww2 < 835) {
+    CategoriesRow.classList.remove("row");
+    homeCategoriesArea.classList.remove("col-6");
+    homeCategoriesbnt.classList.remove("col-6");
+  }
+});
