@@ -13,7 +13,7 @@ const whoWeAreArea2 = document.getElementById("whoWeAreArea2");
 var ww2 = document.body.clientWidth;
 
 $(function () {
-  if (ww2 < 650) {
+  if (ww2 < 873) {
     console.log(ww2);
     whoWeAreArea.classList.remove("row");
     whoWeAreArea1.classList.remove("col-6");

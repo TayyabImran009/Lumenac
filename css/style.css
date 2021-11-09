@@ -460,7 +460,7 @@ h6 {
   margin-top: 10px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 650px) {
   .projects {
     margin-left: 25px;
   }
@@ -474,6 +474,30 @@ h6 {
 @media (min-width: 1920px) {
   .projects {
     margin-left: 60px;
+  }
+}
+
+@media (max-width: 967px) {
+  .projects {
+    margin-left: 10px;
+  }
+  .contain1 {
+    position: relative;
+    width: 50%;
+    height: auto !important;
+    margin: 0px !important;
+    padding: 0px;
+    padding-left: 10px;
+  }
+
+  .projects img {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .contain1:hover .contain-img1 {
+    transform: translate(-10px, -10px) !important;
   }
 }
 /*contact us*/
@@ -510,6 +534,26 @@ h6 {
 }
 
 /* Contact Us */
+
+@media (max-width: 1065px) {
+  .contact-us .contact-button button {
+    font-weight: 600;
+    font-size: 26px;
+    padding: 0%;
+    width: 300px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 951px) {
+  .contact-us .contact-button button {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0%;
+    width: 200px;
+    height: 35px;
+  }
+}
 
 @media (max-width: 650px) {
   .contact-us .contact-button button {
@@ -954,7 +998,7 @@ h6 {
   width: 48px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 890px) {
   .right-align {
     text-align: left;
   }
@@ -966,11 +1010,21 @@ h6 {
     position: absolute;
     right: 0px;
   }
+
+  .icon button {
+    height: 80px;
+    width: 80px;
+  }
+  .icon button img {
+    height: 30px;
+    width: 30px;
+  }
+
   .features {
     margin: 0px;
     display: block;
     padding-left: 20px;
-    margin-top: 400px;
+    margin-top: 50px;
   }
 
   .features p {
@@ -1042,7 +1096,6 @@ h6 {
 .pic-ctn > img {
   position: absolute;
   top: 0;
-  /* left: calc(50% - 100px); */
   opacity: 0;
   animation: display 10s infinite;
 }
@@ -1060,46 +1113,123 @@ img:nth-child(5) {
   animation-delay: 8s;
 }
 
-@media (max-width: 650px) {
-  #whoWeAreArea {
-    padding: 10px;
-  }
-
-  .about-us .about-text {
-    margin-left: 0px;
-  }
-
-  .heading2 h1 {
-    margin-left: 6px;
-  }
-
-  .pic {
-    height: 284px !important;
-    width: 433px;
-  }
-
+@media (max-width: 1318px) {
   .slider-outline {
-    height: 284px !important;
-    margin: auto;
-    margin-top: 50px;
+    height: 184px !important;
     width: 433px;
-    border: 1px solid #000000;
+  }
+  .pic {
+    height: 184px !important;
+    width: 433px;
+  }
+  #whoWeAreArea2 {
+    padding-top: 80px;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1052px) {
+  .slider-outline {
+    height: 184px !important;
+    width: 333px;
+  }
   .pic {
     height: 184px !important;
     width: 333px;
   }
 
+  #whoWeAreArea2 {
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 928px) {
+  #whoWeAreArea2 {
+    padding-left: 80px !important;
+  }
+}
+
+@media (max-width: 873px) {
+  .about-us .about-text {
+    margin: 0px;
+  }
+
+  .about-us .btn-info {
+    display: none;
+  }
+
+  #whoWeAreArea2 {
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    padding-left: 40px;
+  }
+
   .slider-outline {
     height: 184px !important;
-    margin: auto;
-    margin-right: 10%;
-    margin-top: 50px;
     width: 333px;
+    position: relative;
+    float: none;
+    margin: auto;
     border: 1px solid #000000;
+  }
+
+  .pic-ctn {
+    position: absolute;
+    height: 184px !important;
+    width: 333px;
+    transform: translate(-20px, -20px) !important;
+    filter: grayscale(100%);
+    background-color: blue;
+  }
+}
+
+@media (max-width: 485px) {
+  .slider-outline {
+    height: 130px !important;
+    width: 233px;
+    position: relative;
+    float: none;
+    margin: auto;
+    border: 1px solid #000000;
+  }
+
+  .pic-ctn {
+    position: absolute;
+    height: 130px !important;
+    width: 233px;
+    transform: translate(-20px, -20px) !important;
+    filter: grayscale(100%);
+    background-color: blue;
+  }
+
+  .pic {
+    height: 130px !important;
+    width: 233px;
+  }
+
+  #whoWeAreArea2 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 363px) {
+  .slider-outline {
+    height: 130px !important;
+    width: 233px;
+  }
+
+  .pic-ctn {
+    height: 130px !important;
+    width: 150px;
+  }
+
+  .pic {
+    height: 130px !important;
+    width: 233px;
+  }
+
+  #whoWeAreArea2 {
+    padding-top: 0px;
   }
 }
 
@@ -1307,6 +1437,56 @@ img:nth-child(5) {
 }
 
 /* Projects */
+
+@media (max-width: 856px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects img {
+    height: 232px;
+    width: 282px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .contain1 {
+    position: relative;
+    padding-left: 0px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 232px !important;
+    width: 282px;
+  }
+
+  .contain-overlay1 {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 232px;
+    width: 282px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #1a1a1abf;
+  }
+
+  .contain1:hover .contain-img1 {
+    transform: translate(-10px, -10px);
+  }
+
+  .contain1:hover .contain-overlay1 {
+    opacity: 1;
+    margin-bottom: 20px !important;
+    padding-bottom: 20px;
+    transform: translate(-10px, -55px);
+  }
+}
+
 @media (max-width: 650px) {
   .projects {
     display: flex;
@@ -1357,71 +1537,8 @@ img:nth-child(5) {
 }
 
 #categoriesCard {
-  width: 350px;
-  height: 350px;
-}
-
-@media (max-width: 1445px) {
-  #categoriesCard {
-    width: 335px;
-    height: 335px;
-  }
-}
-
-@media (max-width: 1386px) {
-  #categoriesCard {
-    width: 330px;
-    height: 330px;
-  }
-}
-
-@media (max-width: 1367px) {
-  #categoriesCard {
-    width: 325px;
-    height: 325px;
-  }
-}
-
-@media (max-width: 1345px) {
-  #categoriesCard {
-    width: 320px;
-    height: 320px;
-  }
-}
-
-@media (max-width: 1326px) {
-  #categoriesCard {
-    width: 315px;
-    height: 315px;
-  }
-}
-
-@media (max-width: 1306px) {
-  #categoriesCard {
-    width: 310px;
-    height: 310px;
-  }
-}
-
-@media (max-width: 1286px) {
-  #categoriesCard {
-    width: 305px;
-    height: 305px;
-  }
-}
-
-@media (max-width: 1266px) {
-  #categoriesCard {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 1245px) {
-  #categoriesCard {
-    width: 25%;
-    height: auto;
-  }
+  width: 25%;
+  height: auto;
 }
 
 @media (max-width: 650px) {

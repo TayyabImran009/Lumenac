@@ -34,12 +34,6 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto navStyle">
             <li class="nav-item">
-                <a class="nav-link" href="products.html">Product</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="catagory.html">Category</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item dropdown">
@@ -47,8 +41,8 @@
                   Catelogue
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="products.html">Product</a>
+                    <a class="dropdown-item" href="catagory.html">Category</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
@@ -81,8 +75,8 @@
       <hr>
       <li id="catalougeDropdownBtn"><a id="catalougeDropdownH" href="#" class="dropDownH">Catalouge <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
       <div id="catalougeDropdown" class="hideDropDownDiv">
-          <p class="dropDownP">Link 1</p>
-          <p class="dropDownP">Link 1</p>
+        <a class="dropDownP" href="products.html">Product</a><br>
+        <a class="dropDownP" href="catagory.html">Category</a>
           <p class="dropDownP">Link 1</p>
       </div>
       <hr>
@@ -435,12 +429,12 @@
  <br><br>
 <section class="contact-us">
 <div class="container-fluid">
-<div class="row">
-    <div class="col-md-8 contact-text">
+<div class="row" id="contactRow">
+    <div class="col-md-8 contact-text" id="contactText">
         <h2>Contact Us</h2>
         <p>Do you need help with some of our products? Feel free to write to us and an<br> advisor will contact you soon!</p>
     </div>
-    <div class="col-md-4 contact-button">
+    <div class="col-md-4 contact-button" id="contactBtn">
         <button type="button" class="btn btn-info"><i class="fal fa-phone-alt"></i> 4709-3300</button>
     </div>
 </div>
