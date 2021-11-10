@@ -308,6 +308,7 @@
 .flickity-prev-next-button.next {
   right: -65px;
 }
+
 @media (max-width: 650px) {
   .viewAllBtn {
     display: none;
@@ -364,9 +365,9 @@
   }
 
   .carousel-cell:hover {
-    transform: translate(-10px, -10px) !important;
-    border-right: 5px solid #000;
-    border-bottom: 5px solid #000;
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
   }
   .carousel-cell img {
     height: 232px;
@@ -391,19 +392,19 @@
     font-size: 15px !important;
   }
   .carousel-cell {
-    height: 182px;
+    height: 200px;
     width: 50%;
     margin-right: 10px;
     margin-bottom: 80px;
   }
 
   .carousel-cell:hover {
-    transform: translate(-10px, -10px) !important;
-    border-right: 5px solid #000;
-    border-bottom: 5px solid #000;
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
   }
   .carousel-cell img {
-    height: 182px;
+    height: 200px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -428,19 +429,19 @@
     font-size: 12px !important;
   }
   .carousel-cell {
-    height: 132px;
+    height: 180px;
     width: 50%;
     margin-right: 10px;
     margin-bottom: 80px;
   }
 
   .carousel-cell:hover {
-    transform: translate(-10px, -10px) !important;
-    border-right: 5px solid #000;
-    border-bottom: 5px solid #000;
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
   }
   .carousel-cell img {
-    height: 132px;
+    height: 180px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -455,20 +456,76 @@
     font-size: 10px !important;
   }
   .carousel-cell {
-    height: 82px;
+    height: 145px;
     width: 50%;
     margin-right: 10px;
     margin-bottom: 80px;
   }
 
   .carousel-cell:hover {
-    transform: translate(-10px, -10px) !important;
-    border-right: 5px solid #000;
-    border-bottom: 5px solid #000;
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
   }
   .carousel-cell img {
-    height: 82px;
+    height: 145px;
     width: 90%;
+    left: 0px;
+    top: 0px;
+    margin: 0%;
+    border-radius: 0px;
+    object-fit: cover;
+    float: right !important;
+  }
+}
+
+@media (max-width: 447px) {
+  .carousel-cell h2 {
+    font-size: 10px !important;
+  }
+  .carousel-cell {
+    height: 132px;
+    width: 45%;
+    margin-right: 10px;
+    margin-bottom: 80px;
+  }
+
+  .carousel-cell:hover {
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
+  }
+  .carousel-cell img {
+    height: 132px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    margin: 0%;
+    border-radius: 0px;
+    object-fit: cover;
+    float: right !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-cell h2 {
+    font-size: 10px !important;
+  }
+  .carousel-cell {
+    height: 109px;
+    width: 45%;
+    margin-right: 10px;
+    margin-bottom: 80px;
+  }
+
+  .carousel-cell:hover {
+    transform: translate(0px, 0px) !important;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
+  }
+  .carousel-cell img {
+    height: 109px;
+    width: 100%;
     left: 0px;
     top: 0px;
     margin: 0%;
