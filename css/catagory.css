@@ -190,6 +190,10 @@
   border-left: 0px;
 }
 
+#categoryHeading {
+  display: none;
+}
+
 /************************************* Responsive of Large size ********************************/
 @media (max-width: 1272px) {
   .catalougeImgContainer {
@@ -204,6 +208,14 @@
 }
 /* **************************************Mobile Responsive********************************************** */
 @media (max-width: 650px) {
+  #categoryHeading {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+  }
   .catalougeImgContainer {
     width: 45%;
     float: left;
