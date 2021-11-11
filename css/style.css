@@ -1043,8 +1043,8 @@ h6 {
 }
 
 .contain1:hover {
-  border-right: 3px solid #000;
-  border-bottom: 3px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
 }
 
 .contain-img1 {
@@ -1055,7 +1055,7 @@ h6 {
 
 .contain-overlay1 {
   position: absolute;
-  top: 40px;
+  top: 0px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1067,14 +1067,14 @@ h6 {
 }
 
 .contain1:hover .contain-img1 {
-  transform: translate(-10px, -30px);
+  transform: translate(0px, 0px);
 }
 
 .contain1:hover .contain-overlay1 {
   opacity: 1;
-  margin-bottom: 20px !important;
-  padding-bottom: 20px;
-  transform: translate(-10px, -55px);
+  margin-bottom: 0px !important;
+  padding-bottom: 0px;
+  transform: translate(0px, 0px);
 }
 
 .contain-text1 {
