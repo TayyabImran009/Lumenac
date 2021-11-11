@@ -1,0 +1,167 @@
+.institutionalHeading {
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+
+  background-image: url("E:/MyWork/lumenac/img/Header1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  color: white;
+}
+
+.institutionalHeading h1 {
+  font-size: 55px;
+  font-weight: 70px;
+  line-height: 40px;
+}
+
+.institutionalContent {
+  height: 450px;
+  width: 100%;
+  display: flex;
+}
+
+.institutionalContentTextArea {
+  width: 55%;
+  height: 100%;
+  padding-left: 150px;
+  padding-right: 25px;
+  padding-top: 100px;
+  float: left;
+}
+
+.institutionalContentSlider {
+  width: 45%;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-top: 100px;
+}
+
+/******************************************* Slider ****************************************************/
+.slider-outline2 {
+  height: 284px !important;
+  width: 563px;
+  position: relative;
+  float: right;
+  margin-right: 25px;
+  border: 1px solid #000000;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn2 {
+  position: absolute;
+  height: 284px !important;
+  transform: translate(-20px, -20px) !important;
+  filter: grayscale(0);
+}
+
+.pic-ctn2:hover {
+  filter: grayscale(0);
+}
+
+.pic2 {
+  height: 284px !important;
+  width: 563px;
+}
+
+.pic-ctn2 > img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+/******************************************* End Slider ****************************************************/
+
+/******************************************* Contact Us ****************************************************/
+
+.institutionalContactUs {
+  height: 300px;
+  width: 100%;
+
+  background-image: linear-gradient(
+      rgba(46, 155, 211, 0.75),
+      rgba(46, 155, 211, 0.75)
+    ),
+    url("E:/MyWork/lumenac/img/Contact1.jpg") !important;
+  /* background-image: url("E:/MyWork/lumenac/img/Contact1.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  color: #fff;
+}
+
+.institutionalContactUs h1 {
+  font-size: 55px;
+  font-weight: 70px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.institutionalContactUsContent {
+  width: 55%;
+  height: 100%;
+  padding-left: 150px;
+  padding-right: 25px;
+  padding-top: 80px;
+  float: left;
+}
+
+.institutionalContactUsButton {
+  width: 45%;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 120px;
+  float: left;
+}
+
+#institutionalContactUsBtn {
+  height: 56px;
+  width: 247px;
+  margin-left: 30%;
+  border-radius: 20px;
+}
+
+#institutionalContactUsBtn:hover {
+  color: #fff;
+}

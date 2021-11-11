@@ -691,7 +691,17 @@ h6 {
   }
 }
 
+#projectsName {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
 @media (max-width: 967px) {
+  #projectsName {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .projects {
     margin: 0px;
   }
@@ -1241,6 +1251,63 @@ h6 {
   line-height: 22px;
   letter-spacing: 0em;
   text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+  .heading3 a {
+    text-decoration: none;
+    float: none;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-family: MontserratBold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
+
+  #categoryViewAllMobileBtn {
+    margin-top: -70px;
+    margin-bottom: 20px;
+  }
+
+  #homeCategoriesArea {
+    margin-bottom: -55px;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading3 a {
+    text-decoration: none;
+    float: none;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-family: MontserratBold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 380px) {
+  .heading3 a {
+    text-decoration: none;
+    float: none;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-family: MontserratBold;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
 }
 
 .button {
