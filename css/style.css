@@ -181,6 +181,13 @@
   margin-left: -100px;
 }
 
+@media (max-width: 1030px) {
+  .grides .product img {
+    margin-top: 150px;
+    margin-left: 32px;
+  }
+}
+
 .text-slider2 {
   display: none;
 }
@@ -1011,6 +1018,10 @@ h6 {
   text-align: center;
 }
 
+#categoryViewAllMobileBtn {
+  display: none;
+}
+
 @media (max-width: 835px) {
   .homeCategories {
     margin-left: 0px !important;
@@ -1018,6 +1029,10 @@ h6 {
 
   #homeCategoriesbnt {
     display: none;
+  }
+
+  #categoryViewAllMobileBtn {
+    display: block;
   }
 
   #homeCategoriesArea {
@@ -1064,6 +1079,8 @@ h6 {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #1a1a1abf;
+  margin-top: 10px;
+  margin-left: 9px;
 }
 
 .contain1:hover .contain-img1 {

@@ -91,7 +91,8 @@ nav ul li a {
     text-align: center;
     transition: all 0.5s;
     z-index: 9999;
-    margin-top: 33px;
+    margin-top: 27px;
+    padding: 20px;
     display: fix;
   }
   nav ul li {
