@@ -4,16 +4,15 @@
   position: relative;
   text-align: center;
   padding-top: 50px;
-  opacity: 0.75;
-
-  background-image: url("E:/MyWork/lumenac/img/projectsHeader.jpeg");
+  background-image: url("E:/MyWork/lumenac/img/Header1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  color: white;
 }
 
 .project-header-h1 {
   margin-top: 50px;
-  color: black;
   font-weight: 100px;
 }
 
@@ -24,6 +23,17 @@
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 80px;
+}
+
+@media (max-width: 790px) {
+  .latest-projects-area {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 .latest-projects-h1 {
@@ -43,6 +53,25 @@
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
   cursor: pointer;
+}
+
+@media (max-width: 602px) {
+  .projects-list-container {
+    height: 230px;
+    width: 100%;
+    margin-right: 0px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    cursor: pointer;
+  }
+
+  .latest-projects-h1 {
+    font-size: 20px;
+  }
 }
 
 .projects-list-image-div {
@@ -80,8 +109,9 @@
 .projects-list-image-div .projects-overlay-content .overlay-icion {
   color: white;
   font-size: 20px;
-  text-align: center;
+  text-align: right;
   margin-top: 20px;
+  padding-right: 20px !important;
   width: 100%;
   cursor: pointer;
 }
@@ -89,6 +119,7 @@
 .shareIcions {
   display: none;
   color: white;
+  float: right;
 }
 
 .shareIcions:hover {
@@ -121,10 +152,15 @@
   height: 400px;
   width: 100%;
   display: flex;
-  background-image: url("E:/MyWork/lumenac/img/callBackground.jpg");
+  background-image: linear-gradient(
+      rgba(46, 155, 211, 0.75),
+      rgba(46, 155, 211, 0.75)
+    ),
+    url("E:/MyWork/lumenac/img/Contact1.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  color: #fff;
 }
 
 .projects-contact-details {
@@ -149,6 +185,48 @@
   border-radius: 20px;
   border: none;
   color: black;
+}
+
+@media (max-width: 820px) {
+  .projects-contact-container {
+    height: 400px;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(
+        rgba(46, 155, 211, 0.75),
+        rgba(46, 155, 211, 0.75)
+      ),
+      url("E:/MyWork/lumenac/img/Contact1.jpg") !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #fff;
+  }
+
+  .projects-contact-details {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  .projects-contact-button {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  .projects-contact-number {
+    background-color: rgb(255, 255, 1);
+    height: 80px;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    margin: auto !important;
+  }
 }
 
 /* The Modal (background) */

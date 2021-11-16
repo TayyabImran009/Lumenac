@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/chat-box.css">
+    <link rel="stylesheet" href="css/aplicaciones.css">
     <link rel="stylesheet" href="css/navbar2.css">
-    <link rel="stylesheet" href="css/catagory.css">
     <link rel="stylesheet" href="css/footer2.css">
+    <link rel="stylesheet" href="css/institutional.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 
-<body>
+<body> 
     
 <div class="top-bar">
     <h2>Welcome to Lumenac, SA</h2>
@@ -97,74 +99,55 @@
     </label>
 </nav>
 
-<section class="headingCat" style="overflow: auto;">
-    <div class="container-fluid">
-        <div class="catalogueHeading">
-            <div class="catalougeName">
-              <h1><i class="fal fa-horizontal-rule"></i>&nbsp; CATALOUGE</h1>
-            </div>
-            <div class="catalougeOptions">
-              <img src="img/sm.png" class="catalougeSize" id="catalougeSM" alt="">
-              <img src="img/mm.png" class="catalougeSize" id="catalougeMM" alt="">
-              <img src="img/lg.png" class="catalougeSize" id="catalougeLG" alt="">
-            </div>
+<div class="contactHeader">
+    <h1>Contact</h1>
+</div>
+
+<div class="contactContent">
+    <h1>Quick Contact</h1>
+
+    <div class="quickContactCardArea">
+        <div class="quickContactCard">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h6>Email</h6>
+            <p>abc@gmail.com</p>
         </div>
-        <div class="row category-image-area" id="categorySection">
-            <div class="col-3 listOfCatalouge" id="categoryList">
-                <p>Indoor LED Celing Lights</p>
-                <p>Outdoor LED Celing Lights</p>
-                <p style="color: #00539f;">LED Street Lights</p>
-                <p>Solor LED Fixture</p>
-                <p>LED Industrial Pendants</p>
-                <p>Indoor LED Downlights</p> 
-                <p>LED Watertight</p>
-            </div> 
-            <div class="col-9" id="categoryImages">
-              <p style="color: #00539f;" id="categoryHeading">LED Street Lights</p>
-                <div class="catalougeImgContainer" id="catalougeImgContainer">
-                  <img src="img/slide1.png" class="catalougeImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                  <div class="overlay-catalouge">
-                    <p>Led Light</p>
-                  </div>
-                </div>
-
-                <div class="catalougeImgContainer" id="catalougeImgContainer">
-                  <img src="img/slide2.png" class="catalougeImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                  <div class="overlay-catalouge">
-                    <p>Led Light</p>
-                  </div>
-                </div>
-
-                <div class="catalougeImgContainer" id="catalougeImgContainer">
-                  <img src="img/slide3.png" class="catalougeImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                  <div class="overlay-catalouge">
-                    <p>Led Light</p>
-                  </div>
-                </div>
-
-                <div class="catalougeImgContainer" id="catalougeImgContainer">
-                  <img src="img/slide4.png" class="catalougeImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                  <div class="overlay-catalouge">
-                    <p>Led Light</p>
-                  </div>
-                </div>
-
-                <div class="catalougeImgContainer" id="catalougeImgContainer">
-                  <img src="img/slide5.png" class="catalougeImg" alt="">
-                  <p class="nameofCatalouge"><b>LED Light</b></p>
-                  <div class="overlay-catalouge">
-                    <p>Led Light</p>
-                  </div>
-                </div>
-                
-            </div>
+        <div class="quickContactCard">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h6>Telephone:</h6>
+            <p>+4709-3300</p>
+        </div>
+        <div class="quickContactCard">
+            <i class="fa fa-fax" aria-hidden="true"></i>
+            <h6>Fax:</h6>
+            <p>4709-3300. Fax: int. 40</p>
+        </div>
+        <div class="quickContactCard">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <h6>Address:</h6>
+            <p>William Morris 567. Villa Martelli. Buenos Aires</p>
         </div>
     </div>
-</section>
+</div>
+
+<div class="contactMessageArea">
+    <div class="sendMessageArea">
+        <div class="sendMessageFields">
+            <h4>Message:</h4>
+            <h6>Name:</h6>
+            <input type="text" placeholder="Your name">
+            <h6>Email:</h6>
+            <input type="text" placeholder="Your email">
+            <h6>Message:</h6>
+            <input type="textarea" placeholder="Your message">
+        </div>
+        <div class="sendMessageImage">
+            <img src="img/carouse2.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+<div id="map"></div>
 
   <!-- Footer -->
   <footer id="footer">
@@ -290,10 +273,13 @@
     <script src="js/flickity.pkgd.min.js" ></script>
 
     <script src="js/search-popup.js"></script>
-    <script src="js/catagory.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/aplicaciones.js"></script>
     <!-- navBar -->
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>

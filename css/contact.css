@@ -1,0 +1,167 @@
+.contactHeader {
+  height: 250px;
+  text-align: center;
+  color: white;
+  padding-top: 95px;
+  background-image: url("E:/MyWork/lumenac/img/Header1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/********************************************* Quick Contact ********************************************/
+
+.contactContent {
+  padding-top: 80px;
+  height: 400px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.contactContent h1 {
+  text-align: center;
+}
+
+.quickContactCardArea {
+  margin-top: 30px;
+  display: flex;
+}
+
+.quickContactCard {
+  width: 25%;
+  height: 200px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.quickContactCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(46, 155, 211, 0.75);
+}
+
+.quickContactCard i {
+  font-size: 40px;
+}
+
+.quickContactCard h6 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+@media (max-width: 1050px) {
+  .contactContent {
+    padding-top: 80px;
+    height: 400px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contactContent {
+    padding-top: 80px;
+    height: 400px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .contactContent {
+    padding-top: 80px;
+    height: 100%;
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+  .quickContactCardArea {
+    margin-top: 30px;
+    display: block;
+  }
+  .quickContactCard {
+    width: 100% !important;
+    height: 200px;
+    margin-right: 0px;
+    text-align: center;
+    padding-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contactContent h1 {
+    font-size: 35px;
+  }
+}
+
+/********************************************* End Quick Contact ********************************************/
+
+/********************************************* Messages Contact  ********************************************/
+
+.contactMessageArea {
+  height: 400px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.sendMessageArea {
+  width: 100%;
+  height: 90%;
+}
+
+.sendMessageFields {
+  padding: 35px;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+.sendMessageFields h6 {
+  margin-top: 20px;
+}
+
+.sendMessageFields input {
+  width: 100%;
+  height: 40px;
+}
+
+.sendMessageImage {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.sendMessageImage img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1050px) {
+  .contactMessageArea {
+    height: 400px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sendMessageFields {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .sendMessageImage {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+}
+
+/************************************************** Map *********************************************************/
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
