@@ -4,7 +4,7 @@
   text-align: center;
   padding-top: 100px;
 
-  background-image: url("E:/MyWork/lumenac/img/Header1.jpg");
+  background-image: url("https://www.prohygienitech.com/wp-content/uploads/2018/12/page-header-background-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -370,8 +370,7 @@ img:nth-child(5) {
       rgba(46, 155, 211, 0.75),
       rgba(46, 155, 211, 0.75)
     ),
-    url("E:/MyWork/lumenac/img/Contact1.jpg") !important;
-  /* background-image: url("E:/MyWork/lumenac/img/Contact1.jpg"); */
+    url("https://vipar.com/uploads/files/2020/01/27/1680/ContactUs-Hero.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
