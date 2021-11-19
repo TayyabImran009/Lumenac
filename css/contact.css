@@ -160,8 +160,31 @@
 
 /************************************************** Map *********************************************************/
 #map {
-  height: 400px;
+  height: 451px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+#map iframe {
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+@media (max-width: 750px) {
+  #map {
+    height: 451px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+
+    margin-top: 309px;
+  }
+
+  #map iframe {
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 }
