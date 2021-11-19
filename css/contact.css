@@ -164,6 +164,8 @@
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+
+  margin-bottom: 20px;
 }
 
 #map iframe {
@@ -179,7 +181,7 @@
     width: 100%;
     /* The width is the width of the web page */
 
-    margin-top: 309px;
+    margin-top: 338px;
   }
 
   #map iframe {
